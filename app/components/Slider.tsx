@@ -17,13 +17,13 @@ const slides: Slide[] = [
     id: "1",
     title: "Luxury Single-Story Villa",
     description: "Designed for effortless mobility with zero-step entryways and wide corridors.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+    image: "/images/slider-1.jpeg",
   },
   {
     id: "2",
     title: "Community Clubhouse & Gardens",
     description: "Beautifully landscaped walking trails with plenty of shaded seating.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200",
+    image: "/images/slider-2.jpeg",
   },
   {
     id: "3",
