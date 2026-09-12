@@ -44,7 +44,7 @@ export default function VisionMission() {
           </div>
 
           {/* Our Mission - Deep Emerald Hero Card */}
-          <div className="lg:col-span-6 bg-[#0D1A12] text-[#F7F4EE] p-10 md:p-14 rounded-none flex flex-col justify-between relative shadow-2xl overflow-hidden">
+          <div className="lg:col-span-6 bg-teal-800 text-[#fafafa] p-10 md:p-14 rounded-none flex flex-col justify-between relative shadow-2xl overflow-hidden">
             {/* Ambient Gold Glow */}
             <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-[#C5A059]/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -53,19 +53,19 @@ export default function VisionMission() {
                 <span className="text-[#C5A059] font-mono text-xs tracking-[0.2em] uppercase">
                   Statement II
                 </span>
-                <span className="font-serif italic text-sm text-[#A3B0A7]">Our Mission</span>
+                <span className="font-serif italic text-sm text-[#C5A059]">Our Mission</span>
               </div>
               <h3 className="font-serif text-2xl md:text-3xl font-normal text-white leading-snug">
                 A Haven for Golden Years
               </h3>
-              <p className="text-[#A3B0A7] text-base md:text-lg leading-relaxed font-light">
+              <p className="text-[#e9e9e9] text-base md:text-lg leading-relaxed font-light">
                 Our mission is to provide a safe, comfortable, and welcoming home where older adults can enjoy their golden years with dignity. Through professional care, nutritious meals, healthcare support, and meaningful social engagement, we help residents live with confidence and peace of mind.
               </p>
             </div>
 
-            <div className="mt-12 pt-6 border-t border-[#233529] flex items-center justify-between text-xs text-[#7A8A80] relative z-10">
+            <div className="mt-12 pt-6 border-t border-[#233529] flex items-center justify-between text-xs text-[#C5A059] relative z-10">
               <span>24/7 Dedicated Living</span>
-              <span className="tracking-widest uppercase text-[#C5A059]">Bespoke Senior Care</span>
+              <span className="tracking-widest uppercase ">Bespoke Senior Care</span>
             </div>
           </div>
 

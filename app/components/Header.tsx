@@ -4,37 +4,45 @@ import { useState } from 'react'
 import NavBar from './NavBar'
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="bg-white shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-            <div className="relative w-20 h-20 md:w-25 md:h-25">
-                <Image src="/logo.jpeg" alt="senior citizen villa logo - Horana" width={100} height={100} />
-            </div>
-            <div>
-                <nav className="hidden md:flex space-x-10 text-[#4e4b4b]">
-                    <NavBar />
-                </nav>
-                <div className={`mobile-menu md:hidden ${isMenuOpen ? "active block" : ""}`}>
-                    <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="flex gap-2 text-[#4b4e4c] mr-4 items-center">
-                        <span className="uppercase">
-                            Menu
-                        </span>
-                        <div className="menu-toggle block h-[18px] flex-col justify-center items-center">
-                            <span className="w-6 h-[3px] bg-[#2aa13e] block"></span>
-                            <span className="w-6 h-[3px] bg-[#2aa13e] block my-1"></span>
-                            <span className="w-6 h-[3px] bg-[#2aa13e] block"></span>
-                        </div>
-                    </div>
-                    <div className={`menu-dropdown absolute top-24 left-0 w-full h-0 overflow-hidden bg-white shadow-md z-50 transition-all duration-500 ${isMenuOpen ? "h-auto" : ""}`}>
-                        <nav className="flex flex-col space-y-2 text-[#4e4b4b] p-4">
-                            <NavBar />
-                        </nav>
-                    </div>
-                </div>
-            </div>
+       <>
+      <div className="bg-teal-800 text-white py-2 px-4 text-sm font-medium">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+          <span>📍 Horana, Sri Lanka</span>
+          <div className="flex gap-4">
+            <a href="tel:+94774298325" className="hover:text-[#C5A059] transition-colors duration-300">
+              📞 Call Us: +9477 429 83 25
+            </a>
+            <span>•</span>
+            <span>24/7 Care & Inquiries</span>
+          </div>
         </div>
-    </header>
+      </div>
+
+      {/* Navigation Header */}
+      <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 py-1 flex justify-between items-center">
+          <div className="flex text-2xl font-bold text-teal-800 tracking-tight items-center">
+            <div className="relative">
+              <Image
+                src="/logo.jpeg"
+                alt="Senior Citizen Villa Logo"
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+            Senior Citizen Villa
+          </div>
+          <a
+            href="#contact"
+            className="bg-teal-700 hover:bg-teal-800 text-white px-5 py-2.5 rounded-lg font-semibold text-base transition-colors"
+          >
+            Schedule a Visit
+          </a>
+        </div>
+      </header>
+      </>
   )
 }
 

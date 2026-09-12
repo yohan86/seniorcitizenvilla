@@ -128,42 +128,7 @@ export default function LuxuryHero() {
         )}
       </header>
 
-      {/* Hero Section */}
-      <section className="relative py-24 sm:py-32 px-6 max-w-6xl mx-auto">
-        {/* Subtle Background Glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#C5A059]/5 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative z-10 max-w-3xl space-y-8">
-          <div className="inline-flex items-center gap-3 border-l-2 border-[#C5A059] pl-4">
-            <span className="text-[#C5A059] text-xs font-mono tracking-[0.25em] uppercase">
-              Exclusive Senior Living
-            </span>
-          </div>
-
-          <h1 className="font-serif text-4xl sm:text-6xl text-white font-light leading-[1.15] tracking-wide">
-            Where Dignity, Comfort, and Happiness Reside.
-          </h1>
-
-          <p className="text-[#A3B0A7] text-lg sm:text-xl font-light leading-relaxed max-w-2xl">
-            At Senior Citizen Villa, Horana, we provide a peaceful, secure sanctuary where older adults live with continuous professional care, total respect, and complete peace of mind.
-          </p>
-
-          <div className="pt-4 flex flex-wrap items-center gap-6">
-            <a
-              href="#contact"
-              className="bg-[#C5A059] hover:bg-[#b08d4b] text-[#0D1A12] px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] transition-all shadow-lg"
-            >
-              Inquire About Residence
-            </a>
-            <a
-              href="tel:+94XXXXXXXXX"
-              className="border border-[#3A4E40] text-[#F7F4EE] hover:border-[#C5A059] hover:text-[#C5A059] px-8 py-4 text-xs font-semibold uppercase tracking-[0.2em] transition-all"
-            >
-              Speak With Our Care Team
-            </a>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }
