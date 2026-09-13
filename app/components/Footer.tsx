@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -51,29 +52,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm font-light text-[#D8E2D5]">
               <li>
-                <a href="#about" className="hover:text-[#C5A059] transition-colors">
+                <Link href="/about" className="hover:text-[#C5A059] transition-colors">
                   Our Guiding Philosophy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="hover:text-[#C5A059] transition-colors">
+                <Link href="services" className="hover:text-[#C5A059] transition-colors">
                   Pillars of Care & Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#accommodations" className="hover:text-[#C5A059] transition-colors">
+                <Link href="#accommodations" className="hover:text-[#C5A059] transition-colors">
                   Residences & Suites
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#gallery" className="hover:text-[#C5A059] transition-colors">
+                <Link href="/gallery" className="hover:text-[#C5A059] transition-colors">
                   Estate Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#C5A059] transition-colors">
+                <Link href="/contact" className="hover:text-[#C5A059] transition-colors">
                   Arrange a Private Tour
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

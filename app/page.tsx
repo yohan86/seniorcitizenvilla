@@ -3,10 +3,10 @@ import VillaSlider from "./components/Slider";
 import WhyChooseUs from "./components/WhyChooseUs";
 import VisionMission from "./components/VisionMission";
 import Accommodations from "./components/Accomodations";
-import ContactSection from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import FAQSection from "./components/FAQSection";
 import Image from "next/image";
+import { prefix } from "../utils/prefix";
 
 export default function Home() {
 
@@ -56,7 +56,7 @@ export default function Home() {
         {/* Parent container needs 'relative' and fixed/responsive sizing */}
           <div className="relative w-full h-80 md:h-[480px] rounded-full border-5 border-[#fff] overflow-hidden md:py-8 shadow-lg">
             <Image
-              src="/images/citizens2.jpg"
+              src={`${prefix}/images/citizens2.jpg`}
               alt="Senior Citizen Villa Exterior"
               fill
               sizes="(max-width: 768px) 100vw, 500px"

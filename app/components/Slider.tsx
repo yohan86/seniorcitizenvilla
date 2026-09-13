@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import { prefix } from "@/utils/prefix";
 
 interface Slide {
   id: string;
@@ -17,13 +18,13 @@ const slides: Slide[] = [
     id: "1",
     title: "Luxury Single-Story Villa",
     description: "Designed for effortless mobility with zero-step entryways and wide corridors.",
-    image: "/images/slider-1.jpeg",
+    image: `${prefix}/images/slider-1.jpeg`,
   },
   {
     id: "2",
     title: "Community Clubhouse & Gardens",
     description: "Beautifully landscaped walking trails with plenty of shaded seating.",
-    image: "/images/slider-2.jpeg",
+    image: `${prefix}/images/slider-2.jpeg`,
   },
   {
     id: "3",

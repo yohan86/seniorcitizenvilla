@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import NavBar from './NavBar'
 import Link from 'next/link'
+import { prefix } from '@/utils/prefix'
 
 const Header = () => {
   return (
@@ -28,7 +29,7 @@ const Header = () => {
             
             <div className="relative">
               <Image
-                src="/logo.jpeg"
+                src={`${prefix}/logo.jpeg`}
                 alt="Senior Citizen Villa Logo"
                 width={80}
                 height={80}
