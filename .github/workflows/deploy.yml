@@ -21,22 +21,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 1. Set up Node.js FIRST
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22" # Updated from 20 to eliminate deprecation warning
+          node-version: "22"
 
-      # 2. Set up pnpm SECOND
+      # Reads pnpm@11.10.0 automatically from package.json
       - name: Install pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # 3. Install and build
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
