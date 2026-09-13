@@ -1,6 +1,6 @@
+import { prefix } from "@/utils/prefix";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default function Footer() {
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="flex gap-2 items-center font-serif text-2xl tracking-wide text-white font-normal">
                 <div className="relative">
                     <Image
-                      src="/senior-citizen-villa-logo.png"
+                      src={`${prefix}/senior-citizen-villa-logo.png`}
                       alt="Senior Citizen Villa Logo"
                       width={48}
                       height={48}
