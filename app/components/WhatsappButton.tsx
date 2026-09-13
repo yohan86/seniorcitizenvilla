@@ -18,7 +18,7 @@ export default function WhatsAppButton({
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex items-end gap-3 pointer-events-auto">
+    <div className="fixed bottom-20 right-6 z-50 flex items-end gap-3 pointer-events-auto">
       {/* Optional Greeting Badge (Desktop) */}
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-3 bg-[#0D1A12] border border-[#C5A059]/40 text-[#F7F4EE] px-4 py-3 rounded-lg shadow-2xl max-w-xs animate-fade-in relative">

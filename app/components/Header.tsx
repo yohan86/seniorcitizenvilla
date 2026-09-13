@@ -2,12 +2,13 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import NavBar from './NavBar'
+import Link from 'next/link'
 
 const Header = () => {
   return (
        <>
-      <div className="bg-teal-800 text-white py-2 px-4 text-sm font-medium">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div className="hidden md:block  bg-teal-800 text-white py-2 px-4 text-sm font-medium">
+        <div className="max-w-6xl mx-auto flex justify-between items-center gap-2">
           <span>📍 Horana, Sri Lanka</span>
           <div className="flex gap-4">
             <a href="tel:+94774298325" className="hover:text-[#C5A059] transition-colors duration-300">
@@ -22,7 +23,9 @@ const Header = () => {
       {/* Navigation Header */}
       <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-1 flex justify-between items-center">
-          <div className="flex text-2xl font-bold text-teal-800 tracking-tight items-center">
+          <Link href="/">
+          <div className="flex text-[18px] md:text-2xl font-bold text-teal-800 tracking-tight items-center">
+            
             <div className="relative">
               <Image
                 src="/logo.jpeg"
@@ -34,12 +37,18 @@ const Header = () => {
             </div>
             Senior Citizen Villa
           </div>
-          <a
-            href="#contact"
-            className="bg-teal-700 hover:bg-teal-800 text-white px-5 py-2.5 rounded-lg font-semibold text-base transition-colors"
-          >
-            Schedule a Visit
-          </a>
+          </Link>
+          <div className="flex items-center gap-4">
+            <nav className="main-menu flex gap-4 items-center text-sm text-teal-800 uppercase font-semibold tracking-wider">
+              <NavBar />
+            </nav>
+            <Link
+              href="/contact/#contact"
+              className="text-[12px] bg-teal-700 hover:bg-teal-800 text-white  px-2 md:px-5 py-2.5 rounded-lg font-semibold text-base transition-colors"
+            >
+              Schedule a Visit
+            </Link>
+          </div>
         </div>
       </header>
       </>
