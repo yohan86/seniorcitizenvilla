@@ -1,6 +1,7 @@
 import { prefix } from "@/utils/prefix";
 import Image from "next/image";
 import Link from "next/link";
+import NavBar from "./NavBar";
 
 export default function Footer() {
   return (
@@ -50,33 +51,9 @@ export default function Footer() {
             <h4 className="text-[#C5A059] text-xs font-mono tracking-[0.25em] uppercase border-b border-[#1C2C21] pb-2 inline-block">
               Navigation
             </h4>
-            <ul className="space-y-3 text-sm font-light text-[#D8E2D5]">
-              <li>
-                <Link href="/about" className="hover:text-[#C5A059] transition-colors">
-                  Our Guiding Philosophy
-                </Link>
-              </li>
-              <li>
-                <Link href="services" className="hover:text-[#C5A059] transition-colors">
-                  Pillars of Care & Services
-                </Link>
-              </li>
-              <li>
-                <Link href="#accommodations" className="hover:text-[#C5A059] transition-colors">
-                  Residences & Suites
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery" className="hover:text-[#C5A059] transition-colors">
-                  Estate Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-[#C5A059] transition-colors">
-                  Arrange a Private Tour
-                </Link>
-              </li>
-            </ul>
+            <nav className="flex flex-col space-y-3 text-sm font-light text-[#D8E2D5]">
+              <NavBar location="footer" />
+            </nav>
           </div>
 
           {/* Location & Proximity */}

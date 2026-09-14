@@ -1,5 +1,6 @@
-import Footer from "../components/Footer";
+import Image from "next/image";
 import Link from "next/link";
+import { prefix } from "@/utils/prefix";
 
 export const metadata = {
   title: "Medical Disclaimer | Senior Citizen Villa Horana",
@@ -11,15 +12,15 @@ export default function MedicalDisclaimerPage() {
   return (
     <div className="min-h-screen bg-[#F7F4EE] text-[#0D1A12]">
       {/* Header Banner */}
-      <header className="bg-[#0A140E] text-[#F7F4EE] pt-28 pb-16 px-6 border-b border-[#1C2C21]">
-        <div className="max-w-4xl mx-auto space-y-4 text-center md:text-left">
+      <header className="relative bg-teal-800 text-[#F7F4EE] pt-12 pb-12  px-6 border-b border-[#1C2C21]">
+        <div className="relative max-w-4xl mx-auto space-y-4 text-center md:text-left z-2">
           <Link
             href="/"
             className="inline-flex items-center text-xs font-mono uppercase tracking-[0.2em] text-[#C5A059] hover:underline mb-2"
           >
             ← Back to Sanctuary Home
           </Link>
-          <h1 className="font-serif text-3xl md:text-5xl font-normal text-white">
+          <h1 className="font-serif text-3xl md:text-5xl font-normal text-white!">
             Medical & Clinical Disclaimer
           </h1>
           <p className="text-[#A3B0A7] text-sm md:text-base font-light max-w-2xl">
@@ -28,6 +29,12 @@ export default function MedicalDisclaimerPage() {
           <div className="pt-2 text-[11px] font-mono text-[#7A8A80]">
             EFFECTIVE DATE: SEPTEMBER 2026
           </div>
+        </div>
+        <div className="absolute inset-0 w-full h-full bg-teal-800/70 z-1" />
+        <div className="absolute top-0 left-0 w-full h-full z-0">
+          <Image src={`${prefix}/images/senior-slider.jpg`} alt="Senior citizen villa-Horana"
+          fill  className="object-cover object-center" />
+
         </div>
       </header>
 
@@ -95,14 +102,12 @@ export default function MedicalDisclaimerPage() {
               Senior Citizen Villa — Nursing & Clinical Desk
             </p>
             <p>Location: Horana, Kalutara District, Western Province, Sri Lanka</p>
-            <p>Medical Queries: care@seniorvilla-horana.lk</p>
-            <p>Desk Phone: +94 (0) 34 XXX XXXX</p>
+            <p>Medical Queries:<Link href="mailto:piyasapahan@gmail.com"> care@seniorvilla-horana.lk</Link></p>
+            <p>Desk Phone: <Link href="tel:+94774298325">+94 (0) 77 429 8325</Link></p>
           </div>
         </section>
 
       </main>
-
-      <Footer />
     </div>
   );
 }

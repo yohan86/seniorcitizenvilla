@@ -195,10 +195,10 @@ const ContactSection = () => {
             </span>
           </div>
 
-          <div className="w-full h-80 md:h-96 border border-[#1C2C21] overflow-hidden rounded-sm grayscale contrast-125 opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+          <div className="w-full h-80 md:h-96 border border-[#1C2C21] overflow-hidden rounded-sm  contrast-125 opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
             <iframe
               title="Senior Citizen Villa Horana Location Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63391.1627993427!2d80.0247345!3d6.7153641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24a0fa889f031%3A0x6b83f0ff502a5015!2sHorana!5e0!3m2!1sen!2slk!4v1710000000000!5m2!1sen!2slk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.2701108973674!2d80.07691007454001!3d6.736866820647989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24d0011c5adf3%3A0xa67939de53c7a646!2sSenior%20Citizen%20Villa!5e0!3m2!1sen!2slk!4v1789383075569!5m2!1sen!2slk"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -206,6 +206,7 @@ const ContactSection = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
+
           </div>
         </div>
 

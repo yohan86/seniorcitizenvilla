@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials";
 import FAQSection from "./components/FAQSection";
 import Image from "next/image";
 import { prefix } from "../utils/prefix";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -28,7 +29,7 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-6xl text-white font-light leading-[1.15] tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-6xl text-[#3b485a]! font-light leading-[1.15] tracking-wide">
             Where Dignity, Comfort, and Happiness Reside.
           </h1>
 
@@ -37,18 +38,18 @@ export default function Home() {
           </p>
 
           <div className="pt-4 flex flex-wrap items-center gap-6">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="bg-[#C5A059] hover:bg-[#b08d4b] text-[#0D1A12] hover:text-white px-8 py-2 md:py-4 text-xs font-semibold uppercase tracking-[0.2em] transition-all shadow-lg"
             >
               Inquire About Residence
-            </a>
-            <a
+            </Link>
+            <Link
               href="tel:+94774298325"
               className="bg-teal-800 border border-[#3A4E40] text-[#F7F4EE] hover:border-[#C5A059] hover:text-[#C5A059] px-8 py-2 md:py-4  text-xs font-semibold uppercase tracking-[0.2em] transition-all"
             >
               Speak With Care Team
-            </a>
+            </Link>
           </div>
         </div>
         
