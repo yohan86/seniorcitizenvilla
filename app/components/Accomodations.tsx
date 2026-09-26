@@ -3,13 +3,13 @@ const rooms = [
   {
     title: "Deluxe Private Suite",
     desc: "Spacious individual room with private verandah overlooking the Horana garden grounds.",
-    features: ["Attached Modern Bath", "24/7 Nurse Call Button", "Air Conditioned", "Garden View"],
+    features: ["Attached Modern Bath", "24/7 caregiver call button", "Air Conditioned", "Garden View"],
     tag: "Most Popular",
   },
   {
     title: "Executive Shared Suite",
     desc: "Comfortable twin-sharing suite designed for companionship while maintaining personal privacy.",
-    features: ["Shared Ensuite Bath", "24/7 Nurse Call Button", "Wheelchair Friendly", "Daily Housekeeping"],
+    features: ["Shared Ensuite Bath", "24/7 caregiver call button", "Wheelchair Friendly", "Daily Housekeeping"],
     tag: "Companionship",
   },
   {

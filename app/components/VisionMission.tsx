@@ -33,7 +33,9 @@ export default function VisionMission() {
                 Honoring a Lifetime of Contribution
               </h3>
               <p className="text-[#525B56] text-base md:text-lg leading-relaxed font-light">
-                We are committed to ensuring that every senior is respected, valued, and supported with the care and resources needed to live a fulfilling life. Those who have contributed so much to society deserve the same compassion and appreciation as they grow older.
+                To ensure every senior citizen is respected, valued, and supported to live a
+                comfortable, dignified, and fulfilling life, receiving the care and appreciation they
+                deserve for their lifelong contribution to society.
               </p>
             </div>
 
@@ -59,7 +61,9 @@ export default function VisionMission() {
                 A Haven for Golden Years
               </h3>
               <p className="text-[#e9e9e9] text-base md:text-lg leading-relaxed font-light">
-                Our mission is to provide a safe, comfortable, and welcoming home where older adults can enjoy their golden years with dignity. Through professional care, nutritious meals, healthcare support, and meaningful social engagement, we help residents live with confidence and peace of mind.
+                To provide senior citizens with 24-hour care, personalized meals, housekeeping,
+                recreational activities, and social engagement in a safe, comfortable, and welcoming
+                environment where they can enjoy their golden years with dignity and respect.
               </p>
             </div>
 

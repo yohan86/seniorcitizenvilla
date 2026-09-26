@@ -8,6 +8,7 @@ import FAQSection from "./components/FAQSection";
 import Image from "next/image";
 import { prefix } from "../utils/prefix";
 import Link from "next/link";
+import CaregiverJoinSplitSection from "./components/CaregiverJoinSplitSection";
 
 export default function Home() {
 
@@ -84,6 +85,7 @@ export default function Home() {
         <Accommodations />
         <Testimonials />
         <FAQSection />
+        <CaregiverJoinSplitSection />
     </main>
   );
 }

@@ -35,8 +35,9 @@ export default function Footer() {
             </div>
             
             <p className="text-[#A3B0A7] text-sm font-light leading-relaxed max-w-sm">
-              A private luxury residential estate in Horana, Sri Lanka. Providing senior citizens with dignified living, 24/7 dedicated medical assistance, and complete peace of mind for families.
-            </p>
+Senior Citizen Villa – Horana is committed to providing a safe, comfortable, and caring
+            home where senior citizens can enjoy their later years with dignity, independence, and
+            peace of mind.            </p>
 
             <div className="pt-2 flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />

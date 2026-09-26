@@ -81,4 +81,22 @@ h1{
   @apply -rotate-45 -translate-y-[10px];
 }
 
+ul li{
+  @apply list-disc list-inside;
+}
+.forms label{
+  @apply block text-sm font-medium text-stone-200 mb-2;
+}
+.forms label span{
+  @apply text-[#c5a059];
+}
+.forms input{
+  @apply w-full p-3.5 rounded-lg bg-emerald-950 border border-emerald-700 text-stone-100 focus:outline-none focus:border-[#c5a059] transition-colors;
+}
+.forms textarea{
+  @apply w-full p-3.5 rounded-lg bg-emerald-950 border border-emerald-700 text-stone-100 focus:outline-none focus:border-[#c5a059] transition-colors;
+}
+.forms input[type="number"]{
+  @apply p-[10px];
+}
 

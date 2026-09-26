@@ -36,11 +36,27 @@ export default function AboutPage() {
             A Haven Built for Dignity
           </h2>
           <p>
-            Situated amidst the serene foliage of Horana, Senior Citizen Villa was founded to redefine eldercare in Sri Lanka. We believe senior years should be characterized by comfort, dignity, and independence, supported by unobtrusive 24/7 care.
+            Senior Citizen Villa – Horana is committed to providing a safe, comfortable, and caring
+            home where senior citizens can enjoy their later years with dignity, independence, and
+            peace of mind.
           </p>
-          <p>
-            Whether serving residents locally or providing complete assurance to family members living overseas, our sanctuary balances professional clinical support with the warmth of a true home.
-          </p>
+          <h3 className="font-serif text-xl text-[#0D1A12]">
+          Our facilities and services include:
+          </h3>
+          <ul>
+            <li>Comfortable and secure accommodation</li>
+            <li>Nutritious, professionally prepared meals</li>
+            <li>24-hour care and assistance from trained caregivers</li>
+            <li>Medication and medical support</li>
+            <li>Assistance with daily personal care and activities</li>
+            <li>Recreational activities and social events</li>
+            <li>Transportation for medical appointments and shopping</li>
+            <li>Pleasant outdoor spaces for relaxation and recreation</li>
+            <li>Regular health monitoring and professional support</li>
+          </ul>
+           <p> Our goal is to create a welcoming, supportive, and homely environment where
+            every resident feels cared for, respected, and valued.
+            </p>
         </section>
       </main>
 

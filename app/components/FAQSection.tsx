@@ -13,7 +13,7 @@ const faqs: FAQItem[] = [
     category: "Care & Health",
     question: "How are medical emergencies handled at the villa?",
     answer:
-      "We maintain 24/7 on-site nursing staff and vital monitoring stations. For acute medical needs, our villa is situated just 10 minutes from the Horana Base Hospital, and we have emergency transport protocols and visiting doctors on call at all times.",
+      "We maintain 24/7 on-site caregiver staff and vital monitoring stations. For acute medical needs, our villa is situated just 10 minutes from the Horana Base Hospital, and we have emergency transport protocols and visiting doctors on call at all times.",
   },
   {
     category: "Living & Stay",
@@ -37,7 +37,7 @@ const faqs: FAQItem[] = [
     category: "Pricing & Inclusions",
     question: "What is included in the monthly residential care fee?",
     answer:
-      "The monthly fee covers full suite accommodation, three nutritious main meals plus morning/evening tea, daily housekeeping, laundry services, 24/7 nursing supervision, scheduled recreational activities, and high-speed Wi-Fi for family video calls.",
+      "The monthly fee covers full suite accommodation, three nutritious main meals plus morning/evening tea, daily housekeeping, laundry services, 24/7 caregiver supervison, scheduled recreational activities, and high-speed Wi-Fi for family video calls.",
   },
 ];
 
