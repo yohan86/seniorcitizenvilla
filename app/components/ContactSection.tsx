@@ -19,7 +19,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 bg-[#0A140E] text-[#F7F4EE]">
+    <section id="contact" className="pt-24  bg-white text-[#F7F4EE]">
       <div className="max-w-6xl mx-auto space-y-16">
         
         {/* Section Header */}
@@ -27,14 +27,14 @@ const ContactSection = () => {
           <span className="text-[#C5A059] text-xs font-semibold tracking-[0.3em] uppercase font-mono">
             Connect With Us
           </span>
-          <h2 className="font-serif text-3xl md:text-5xl font-normal text-white">
+          <h2 className="font-serif text-3xl md:text-5xl font-normal text-green">
             Arrange a Private Visit or Consultation
           </h2>
-          <p className="text-[#A3B0A7] text-sm md:text-base font-light">
+          <p className="text-stone-500 text-sm md:text-base font-light">
             We welcome families and overseas sponsors to tour our Horana sanctuary, inspect our residential suites, and meet our nursing care staff.
           </p>
-              <Link href="/" className="inline-flex items-center text-xs font-mono uppercase tracking-[0.2em] text-[#C5A059] hover:underline mb-2">
-            ← Back to Sanctuary Home
+          <Link href="/" aria-label="back to home page" className="inline-flex items-center text-xs font-mono uppercase tracking-[0.2em] text-[#C5A059] hover:underline mb-2">
+              ← Back to Sanctuary Home
           </Link>
           
         </div>
@@ -43,65 +43,52 @@ const ContactSection = () => {
         <div id="contactform" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Inquiry Form */}
-          <div className="lg:col-span-7 bg-[#0D1A12] p-8 md:p-10 border border-[#1C2C21] rounded-sm space-y-6">
+          <div className="lg:col-span-7 bg-green p-8 md:p-10 border border-[#1C2C21] rounded-sm space-y-6">
             <h3 className="font-serif text-2xl text-white font-normal">
               Send an Inquiry
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-5 text-sm">
+            <form onSubmit={handleSubmit} className="forms space-y-5 text-sm">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="space-y-2">
-                  <label className="text-xs font-mono uppercase text-[#C5A059] tracking-wider">
-                    Your Full Name *
-                  </label>
+                  <label>Your Full Name *</label>
                   <input
                     type="text"
                     required
                     placeholder="e.g. Priyantha Fernando"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#0A140E] border border-[#1C2C21] p-3 text-white placeholder-[#526357] focus:outline-none focus:border-[#C5A059] transition-colors"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs font-mono uppercase text-[#C5A059] tracking-wider">
-                    Phone Number (WhatsApp) *
-                  </label>
+                  <label>Phone Number (WhatsApp) *</label>
                   <input
                     type="tel"
                     required
                     placeholder="+94 77 XXX XXXX"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-[#0A140E] border border-[#1C2C21] p-3 text-white placeholder-[#526357] focus:outline-none focus:border-[#C5A059] transition-colors"
-                  />
+                    />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="space-y-2">
-                  <label className="text-xs font-mono uppercase text-[#C5A059] tracking-wider">
-                    Email Address
-                  </label>
+                  <label>Email Address</label>
                   <input
                     type="email"
                     placeholder="name@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#0A140E] border border-[#1C2C21] p-3 text-white placeholder-[#526357] focus:outline-none focus:border-[#C5A059] transition-colors"
-                  />
+                    />
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs font-mono uppercase text-[#C5A059] tracking-wider">
-                    Inquiring As
-                  </label>
+                  <label>Inquiring As</label>
                   <select
                     value={formData.relationship}
-                    onChange={(e) => setFormData({ ...formData, relationship: e.target.value })}
-                    className="w-full bg-[#0A140E] border border-[#1C2C21] p-3 text-white focus:outline-none focus:border-[#C5A059] transition-colors"
-                  >
+                    onChange={(e) => setFormData({ ...formData, relationship: e.target.value })}>
                     <option value="child">Son / Daughter (Sponsor)</option>
                     <option value="self">Prospective Resident</option>
                     <option value="guardian">Guardian / Relative</option>
@@ -111,21 +98,18 @@ const ContactSection = () => {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs font-mono uppercase text-[#C5A059] tracking-wider">
-                  Care Requirements or Message
-                </label>
+                <label>Care Requirements or Message</label>
                 <textarea
                   rows={4}
                   placeholder="Share details about health condition, preferred stay duration, or questions..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-[#0A140E] border border-[#1C2C21] p-3 text-white placeholder-[#526357] focus:outline-none focus:border-[#C5A059] transition-colors"
-                ></textarea>
+                  ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#C5A059] hover:bg-[#b08c47] text-[#0A140E] font-medium py-3.5 px-6 uppercase tracking-wider text-xs font-mono transition-colors"
+                className="w-full bg-dark-gold hover:bg-[#b08c47] text-[#0A140E] font-medium py-3.5 px-6 uppercase tracking-wider text-xs font-mono transition-colors"
               >
                 Submit Inquiry
               </button>
@@ -134,43 +118,43 @@ const ContactSection = () => {
 
           {/* Location & Details Side Panel */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="bg-[#0D1A12] p-8 border border-[#1C2C21] space-y-6">
-              <h3 className="font-serif text-2xl text-white font-normal border-b border-[#1C2C21] pb-3">
+            <div className="bg-green p-8 border border-[#1C2C21] space-y-6">
+              <h3 className="font-serif text-2xl text-white font-normal border-b border-[#2b663e] pb-3">
                 Sanctuary Address
               </h3>
-              
-              <div className="space-y-4 text-sm font-light text-[#A3B0A7]">
+
+              <div className="space-y-4 text-sm font-light text-stone-100">
                 <p className="leading-relaxed">
-                  <strong className="text-white font-medium block">Senior Citizen Villa</strong>
+                  <strong className="text-site-yellow font-medium block">Senior Citizen Villa</strong>
                   Horana, Kalutara District,<br />
                   Western Province, Sri Lanka.
                 </p>
 
-                <div className="space-y-2 font-mono text-xs pt-2">
+                <div className="space-y-2 pt-2">
                   <p>
-                    <span className="text-[#C5A059]">TELEPHONE:</span><a href="tel:+94774298325"> +94 (0) 77 429 8325</a>
+                    <span className="text-site-yellow ">PHONE:</span><a href="tel:+94774298325"> +94 (0) 77 429 8325</a>
                   </p>
                   <p>
-                    <span className="text-[#C5A059]">CARE DESK:</span><a href="tel:+94774298325"> +94 (0) 77 429 8325</a>
+                    <span className="text-site-yellow">CARE DESK:</span><a href="tel:+94774298325"> +94 (0) 77 429 8325</a>
                   </p>
                   <p>
-                    <span className="text-[#C5A059]">EMAIL:</span><a href="mailto:piyasapahan@gmail.com">info@seniorvilla-horana.lk</a>
+                    <span className="text-site-yellow">EMAIL:</span><a href="mailto:piyasapahan@gmail.com"> info@seniorvilla-horana.lk</a>
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Quick Distance Highlights */}
-            <div className="bg-[#0D1A12] p-6 border border-[#1C2C21] space-y-3">
-              <h4 className="text-xs font-mono uppercase text-[#C5A059] tracking-wider">
+            <div className="bg-green p-6 border border-[#1C2C21] space-y-3">
+              <h4 className="text-sm font-mono uppercase text-site-yellow tracking-wider font-bold">
                 Proximity & Access
               </h4>
-              <ul className="text-xs text-[#A3B0A7] space-y-2 font-light">
-                <li className="flex justify-between border-b border-[#1C2C21] pb-1.5">
+              <ul className=" text-stone-100 space-y-2 font-light">
+                <li className="flex justify-between border-b border-[#2b663e] pb-1.5">
                   <span>Horana Base Hospital</span>
                   <span className="text-white font-mono">10 Mins</span>
                 </li>
-                <li className="flex justify-between border-b border-[#1C2C21] pb-1.5">
+                <li className="flex justify-between border-b border-[#2b663e] pb-1.5">
                   <span>Gelanigama Expressway Interchange</span>
                   <span className="text-white font-mono">15 Mins</span>
                 </li>
@@ -184,10 +168,12 @@ const ContactSection = () => {
 
         </div>
 
-        {/* Embedded Interactive Google Map */}
-        <div className="space-y-4 pt-6">
+      </div>
+      {/* Embedded Interactive Google Map */}
+        <div className="space-y-4 pt-6 mt-20 w-full bg-[#0d4e27]">
+          <div className="mx-auto max-w-[96%] pb-5 px-6">
           <div className="flex items-center justify-between">
-            <h3 className="font-serif text-xl text-white font-normal">
+            <h3 className="text-sm text-white font-normal">
               Interactive Location Map
             </h3>
             <span className="text-xs font-mono text-[#C5A059] uppercase tracking-wider">
@@ -208,9 +194,8 @@ const ContactSection = () => {
             />
 
           </div>
+          </div>
         </div>
-
-      </div>
     </section>
   );
 }

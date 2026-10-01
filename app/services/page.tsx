@@ -92,12 +92,15 @@ export default function ServicesPage({ clickfn }: { clickfn?: (val: boolean) => 
           <span className="text-[#c5a059] uppercase tracking-widest text-sm font-semibold">
             Personalized Assistance
           </span>
-          <h1 className="text-4xl sm:text-5xl font-serif font-bold text-stone-100 mt-2 mb-4">
+          <h1 className="text-3xl sm:text-5xl font-bold text-stone-100 mt-2 mb-4">
             Our Care Services
           </h1>
           <p className="text-stone-300 text-lg">
             Providing compassionate, professional care tailored to every stage of senior wellness and recovery.
           </p>
+          <Link href="/"  aria-label="back to home page" className="inline-flex items-center text-xs font-mono uppercase tracking-[0.2em] text-gold hover:underline mb-2">
+            ← Back to Sanctuary Home
+          </Link>
         </div>
 
         {/* Services Grid */}
@@ -107,23 +110,23 @@ export default function ServicesPage({ clickfn }: { clickfn?: (val: boolean) => 
               key={service.id}
               className={`relative flex flex-col justify-between rounded-xl p-8 border transition-all duration-300 ${
                 service.highlight
-                  ? 'bg-emerald-900/40 border-[#c5a059] shadow-lg shadow-[#c5a059]/10'
-                  : 'bg-emerald-900/20 border-emerald-800/60 hover:border-[#c5a059]/50'
+                  ? 'bg-green/90 border-[#c5a059] shadow-lg shadow-[#c5a059]/10'
+                  : 'bg-green/60 border-emerald-800/60 hover:border-[#c5a059]/50'
               }`}
             >
               <div>
                 {/* Badge for featured services */}
                 {service.badge && (
-                  <span className="inline-block bg-[#c5a059] text-emerald-950 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">
+                  <span className="inline-block bg-gold text-emerald-950 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">
                     {service.badge}
                   </span>
                 )}
 
-                <h3 className="text-2xl font-serif font-bold text-[#c5a059] mb-3">
+                <h3 className="text-2xl font-bold text-site-yellow mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-stone-300 mb-6 text-sm leading-relaxed">
+                <p className="text-stone-200 mb-6 text-sm leading-relaxed">
                   {service.description}
                 </p>
 
@@ -132,7 +135,7 @@ export default function ServicesPage({ clickfn }: { clickfn?: (val: boolean) => 
                   <ul className="space-y-2 mb-6">
                     {service.items.map((item, index) => (
                       <li key={index} className="flex items-start text-sm text-stone-200">
-                        <span className="text-[#c5a059] mr-2 font-bold">•</span>
+                        <span className="text-gold mr-2 font-bold">•</span>
                         {item}
                       </li>
                     ))}
@@ -145,7 +148,7 @@ export default function ServicesPage({ clickfn }: { clickfn?: (val: boolean) => 
                 <Link
                   href="/contact"
                   onClick={() => clickfn?.(false)}
-                  className="inline-flex items-center text-sm font-semibold text-[#c5a059] hover:text-amber-300 transition-colors"
+                  className="inline-flex items-center text-sm font-semibold text-gold hover:text-amber-300 transition-colors"
                 >
                   Inquire About This Service →
                 </Link>

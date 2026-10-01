@@ -1,5 +1,3 @@
-
-import Link from "next/link";
 import ContactSection from "../components/ContactSection";
 
 export const metadata = {

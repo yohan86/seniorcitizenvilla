@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A140E] text-[#F7F4EE] border-t border-[#1C2C21] pt-20 pb-10 px-6">
+    <footer className="bg-[#0a5629] text-[#F7F4EE] border-t border-[#9da040] pt-20 pb-10 px-6">
       <div className="max-w-6xl mx-auto">
         
         {/* Main Grid: Brand, Links, Location & Contact */}
@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
                 <span className="flex flex-col">
                     <span>Senior Citizen Villa</span>
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-[#C5A059] font-mono mt-1">
+                    <span className="text-[10px] tracking-[0.3em] uppercase text-site-yellow font-mono mt-1">
                         Horana Sanctuary
                     </span>
                 </span>
@@ -34,14 +34,14 @@ export default function Footer() {
               
             </div>
             
-            <p className="text-[#A3B0A7] text-sm font-light leading-relaxed max-w-sm">
+            <p className="text-[#b5c5bb] text-sm font-light leading-relaxed max-w-sm">
 Senior Citizen Villa – Horana is committed to providing a safe, comfortable, and caring
             home where senior citizens can enjoy their later years with dignity, independence, and
             peace of mind.            </p>
 
             <div className="pt-2 flex items-center gap-3">
               <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
-              <span className="text-xs text-[#A3B0A7] font-mono tracking-wider uppercase">
+              <span className="text-xs text-[#b5c5bb] font-mono tracking-wider uppercase">
                 Admissions & Care Desk Active
               </span>
             </div>
@@ -49,7 +49,7 @@ Senior Citizen Villa – Horana is committed to providing a safe, comfortable, a
 
           {/* Quick Navigation Links */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-[#C5A059] text-xs font-mono tracking-[0.25em] uppercase border-b border-[#1C2C21] pb-2 inline-block">
+            <h4 className="text-site-yellow text-xs font-mono tracking-[0.25em] uppercase border-b border-[#1C2C21] pb-2 inline-block">
               Navigation
             </h4>
             <nav className="flex flex-col space-y-3 text-sm font-light text-[#D8E2D5]">
@@ -59,32 +59,32 @@ Senior Citizen Villa – Horana is committed to providing a safe, comfortable, a
 
           {/* Location & Proximity */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-[#C5A059] text-xs font-mono tracking-[0.25em] uppercase border-b border-[#1C2C21] pb-2 inline-block">
+            <h4 className="text-site-yellow text-xs font-mono tracking-[0.25em] uppercase border-b border-[#1C2C21] pb-2 inline-block">
               Key Proximity
             </h4>
             <ul className="space-y-3 text-xs text-[#A3B0A7] font-light">
               <li className="flex flex-col">
-                <span className="text-white font-medium">Horana Base Hospital</span>
-                <span className="text-[#7A8A80]">10 Mins Drive</span>
+                <span className="text-white font-medium">Horana General Hospital</span>
+                <span className="text-[#b5c5bb]">10 Mins Drive</span>
               </li>
               <li className="flex flex-col">
                 <span className="text-white font-medium">Gelanigama Expressway Interchange</span>
-                <span className="text-[#7A8A80]">15 Mins Drive</span>
+                <span className="text-[#b5c5bb]">15 Mins Drive</span>
               </li>
               <li className="flex flex-col">
                 <span className="text-white font-medium">Colombo City Limits</span>
-                <span className="text-[#7A8A80]">approx. 45 Mins</span>
+                <span className="text-[#b5c5bb]">approx. 45 Mins</span>
               </li>
             </ul>
           </div>
 
           {/* Direct Contact Info */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-[#C5A059] text-xs font-mono tracking-[0.25em] uppercase border-b border-[#1C2C21] pb-2 inline-block">
+            <h4 className="text-site-yellow text-xs font-mono tracking-[0.25em] uppercase border-b border-[#1C2C21] pb-2 inline-block">
               Direct Contact
             </h4>
             <div className="space-y-3 text-sm font-light text-[#D8E2D5]">
-              <p className="leading-relaxed text-[#A3B0A7]">
+              <p className="leading-relaxed text-[#b5c5bb]">
                 Senior Citizen Villa,<br />
                 Horana, Kalutara District,<br />
                 Western Province, Sri Lanka.
@@ -116,22 +116,22 @@ Senior Citizen Villa – Horana is committed to providing a safe, comfortable, a
         </div>
 
         {/* Bottom Bar: Copyright, Legal Links & Developer Credit */}
-        <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs font-light text-[#7A8A80]">
+        <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs font-light text-[#C5A059]">
           <p>
             © {new Date().getFullYear()} Senior Citizen Villa, Horana. All Rights Reserved.
           </p>
 
           {/* Legal Pages & Policy Links */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-[11px]">
-            <a href="/privacy-policy" className="hover:text-[#C5A059] transition-colors">
+            <a href="/privacy-policy" className="hover:text-[#92ac84] transition-colors">
               Privacy Policy
             </a>
             <span className="text-[#1C2C21]">|</span>
-            <a href="/terms-of-residence" className="hover:text-[#C5A059] transition-colors">
+            <a href="/terms-of-residence" className="hover:text-[#92ac84] transition-colors">
               Terms of Residence
             </a>
             <span className="text-[#1C2C21]">|</span>
-            <a href="/medical-disclaimer" className="hover:text-[#C5A059] transition-colors">
+            <a href="/medical-disclaimer" className="hover:text-[#92ac84] transition-colors">
               Medical Disclaimer
             </a>
           </div>
@@ -143,7 +143,7 @@ Senior Citizen Villa – Horana is committed to providing a safe, comfortable, a
               href="https://diyoshit.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#C5A059] hover:underline font-semibold"
+              className="text-[#C5A059] hover:text-[#92ac84] font-semibold"
             >
               Diyosh IT
             </a>

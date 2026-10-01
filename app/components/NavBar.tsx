@@ -28,7 +28,7 @@ const NavBar = ({location = "header", onClose }: NavBarProps) => {
    
         return(
         <Link key={item.name} href={item.href}
-        className={isActive ? 'text-[#c5a059] transition-all duration-300' : ''}
+        className={isActive ? 'text-dark-gold transition-all duration-300' : ''}
         onClick={()=>onClose?.(false)}
         >
           {displayName}

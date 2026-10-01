@@ -9,7 +9,7 @@ const Header = () => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
   return (
        <>
-      <div className="hidden md:block  bg-teal-800 text-white py-2 px-4 text-sm font-medium">
+      <div className="hidden md:block  bg-green text-white py-2 px-4 text-sm font-medium">
         <div className="max-w-6xl mx-auto flex justify-between items-center gap-2">
           <span>📍 Horana, Sri Lanka</span>
           <div className="flex gap-4">
@@ -46,7 +46,7 @@ const Header = () => {
             </nav>
             <Link
               href="/contact"
-              className="text-[12px] bg-teal-700 hover:bg-teal-800 text-white  px-2 md:px-5 py-2.5 rounded-lg font-semibold text-base transition-colors"
+              className="text-[12px] bg-green hover:bg-teal-800 text-white  px-2 md:px-5 py-2.5 rounded-lg font-semibold text-base transition-colors"
             >
               Schedule a Visit
             </Link>

@@ -60,53 +60,56 @@ const JoinAsCaregiverPage = () => {
   };
 
   return (
-    <main className="min-h-screen bg-emerald-950 text-stone-100 py-16 px-6 sm:px-12">
+    <main className="min-h-screen bg-white text-stone-100 py-16 px-6 sm:px-12">
       <div className="max-w-4xl mx-auto">
         
         {/* Page Header */}
         <div className="text-center mb-12">
-          <span className="text-[#c5a059] uppercase tracking-widest text-sm font-semibold">
+          <span className="text-dark-gold uppercase tracking-widest text-sm font-semibold">
             Join Our Professional Network
           </span>
-          <h1 className="text-4xl sm:text-4xl font-medium text-stone-100 mt-2 mb-4">
+          <h1 className="text-4xl sm:text-4xl font-medium text-green! mt-2 mb-4">
             Become a Verified Caregiver
           </h1>
-          <p className="text-stone-300 text-lg max-w-2xl mx-auto">
+          <p className="text-stone-500 text-lg max-w-2xl mx-auto">
             Build a rewarding career helping families in need. Access competitive pay, flexible work hours, and ongoing support across Sri Lanka.
           </p>
+          <Link href="/" aria-label="back to home page" className="inline-flex items-center text-xs font-mono uppercase tracking-[0.2em] text-[#C5A059] hover:underline mb-2">
+            ← Back to Sanctuary Home
+          </Link>
         </div>
 
         {/* Feature Badges */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-          <div className="p-4 rounded-xl bg-emerald-900/30 border border-emerald-800/60">
-            <span className="text-[#c5a059] font-bold text-lg block mb-1">
+          <div className="p-4 rounded-xl bg-green border border-emerald-800/60">
+            <span className="text-site-yellow font-bold text-lg block mb-1">
               ✓ Competitive Compensation
             </span>
-            <span className="text-stone-300 text-sm">
+            <span className="text-stone-200 text-sm">
               Reliable monthly or weekly payouts
             </span>
           </div>
-          <div className="p-4 rounded-xl bg-emerald-900/30 border border-emerald-800/60">
-            <span className="text-[#c5a059] font-bold text-lg block mb-1">
+          <div className="p-4 rounded-xl bg-green border border-emerald-800/60">
+            <span className="text-site-yellow  font-bold text-lg block mb-1">
               ✓ Flexible Placements
             </span>
-            <span className="text-stone-300 text-sm">
+            <span className="text-stone-200 text-sm">
               Choose shifts near your preferred city
             </span>
           </div>
-          <div className="p-4 rounded-xl bg-emerald-900/30 border border-emerald-800/60">
-            <span className="text-[#c5a059] font-bold text-lg block mb-1">
+          <div className="p-4 rounded-xl bg-green border border-emerald-800/60">
+            <span className="text-site-yellow  font-bold text-lg block mb-1">
               ✓ Dedicated Support
             </span>
-            <span className="text-stone-300 text-sm">
+            <span className="text-stone-200 text-sm">
               24/7 care management guidance
             </span>
           </div>
         </div>
 
         {/* Form Container */}
-        <div className="p-8 sm:p-12 bg-emerald-900/40 border border-[#c5a059]/40 rounded-2xl shadow-2xl backdrop-blur-md">
-          <h2 className="text-2xl font-bold text-[#c5a059] mb-6">
+        <div className="p-8 sm:p-12 bg-green border border-[#c5a059]/40 rounded-2xl shadow-2xl backdrop-blur-md">
+          <h2 className="text-2xl font-bold text-site-yellow mb-6">
             Caregiver Application Form
           </h2>
 
@@ -184,7 +187,7 @@ const JoinAsCaregiverPage = () => {
                 <select
                   name="qualifications"
                   required
-                  className="w-full p-3.5 rounded-lg bg-emerald-950 border border-emerald-700 text-stone-100 focus:outline-none focus:border-[#c5a059] transition-colors"
+                  className=""
                 >
                   <option value="">Select Qualification...</option>
                   <option value="NVQ Level 3 / 4 Caregiving">NVQ Level 3 / 4 Caregiving</option>
@@ -240,9 +243,7 @@ const JoinAsCaregiverPage = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              disabled={loading}
-              className="w-full py-2 bg-[#c5a059] text-emerald-950 font-bold cursor-pointer text-[16px] rounded-lg hover:bg-amber-300 transition-colors duration-300 shadow-lg disabled:opacity-50"
-            >
+              disabled={loading}>
               {loading ? "Submitting Application..." : "Submit Caregiver Application"}
             </button>
 
@@ -260,9 +261,9 @@ const JoinAsCaregiverPage = () => {
           </form>
 
           {/* Alternative Contact */}
-          <div className="mt-8 text-center text-sm text-stone-400">
+          <div className="mt-8 text-center text-sm text-stone-100">
             Have questions before applying? Call our recruiter helpline or{" "}
-            <Link href="/contact" className="text-[#c5a059] underline hover:text-amber-300">
+            <Link href="/contact" className="text-amber-300 underline hover:text-amber-100">
               Contact Us Here
             </Link>
           </div>

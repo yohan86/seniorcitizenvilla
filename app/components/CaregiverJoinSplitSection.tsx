@@ -35,8 +35,8 @@ export default function CaregiverJoinSplitSection({ clickfn }: CaregiverJoinSpli
         }}
       >
         {/* Deep Emerald Dark Overlay */}
-        <div className="absolute inset-0 bg-emerald-950/85 backdrop-blur-[2px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-emerald-950 via-transparent to-emerald-950" />
+        <div className="absolute inset-0 bg-green/55 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-green via-transparent to-emerald-950" />
       </div>
 
       {/* Content Container */}
@@ -57,12 +57,12 @@ export default function CaregiverJoinSplitSection({ clickfn }: CaregiverJoinSpli
         {/* Dual Choice Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {/* Card 1: Find a Caregiver */}
-          <div className="group relative bg-emerald-900/40 border border-[#c5a059]/40 rounded-2xl p-8 sm:p-10 flex flex-col justify-between hover:border-[#c5a059] hover:bg-emerald-900/60 transition-all duration-300 shadow-xl backdrop-blur-md">
+          <div className="group relative bg-green/20 border border-[#c5a059]/40 rounded-2xl p-8 sm:p-10 flex flex-col justify-between hover:border-[#c5a059] hover:bg-emerald-900/60 transition-all duration-300 shadow-xl backdrop-blur-md">
             <div>
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#c5a059]/10 text-[#c5a059] font-bold text-xl mb-6 border border-[#c5a059]/30">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#c5a059]/10 text-stone-100 font-bold text-xl mb-6 border border-[#c5a059]/30">
                 01
               </div>
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#c5a059] mb-4">
+              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-stone-100 mb-4">
                 Need a Caregiver?
               </h3>
               <p className="text-stone-200 text-sm sm:text-base leading-relaxed mb-8">

@@ -3,13 +3,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --green: #1b7f47;
+  /* --green: #1b7f47; */
+  --green: #13a64e;
+  --gold: #f8cf89;
+  --dark-gold: #c5a059;
+  --yellow: #e9e60c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-green: var(--green);
+  --color-gold: var(--gold);
+  --color-site-yellow: var(--yellow);
+  --color-dark-gold: var(--dark-gold);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -85,18 +92,23 @@ ul li{
   @apply list-disc list-inside;
 }
 .forms label{
-  @apply block text-sm font-medium text-stone-200 mb-2;
+  @apply block text-sm font-medium text-stone-100 mb-2;
 }
 .forms label span{
-  @apply text-[#c5a059];
+  @apply text-white;
 }
-.forms input{
-  @apply w-full p-3.5 rounded-lg bg-emerald-950 border border-emerald-700 text-stone-100 focus:outline-none focus:border-[#c5a059] transition-colors;
+.forms input,
+.forms select{
+  @apply w-full p-3.5 rounded-lg bg-emerald-950/20 border border-emerald-700 text-stone-100 focus:outline-none focus:border-[#c5a059] transition-colors;
 }
 .forms textarea{
-  @apply w-full p-3.5 rounded-lg bg-emerald-950 border border-emerald-700 text-stone-100 focus:outline-none focus:border-[#c5a059] transition-colors;
+  @apply w-full p-3.5 rounded-lg bg-emerald-950/20 border border-emerald-700 text-stone-100 focus:outline-none focus:border-[#c5a059] transition-colors;
 }
 .forms input[type="number"]{
   @apply p-[10px];
 }
+.forms button{
+  @apply w-full py-2 bg-site-yellow  text-emerald-950 font-bold cursor-pointer text-[16px] rounded-lg hover:bg-amber-300 transition-colors duration-300 shadow-lg disabled:opacity-50;
+}
+
 

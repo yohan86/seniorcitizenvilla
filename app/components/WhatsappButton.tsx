@@ -23,7 +23,7 @@ export default function WhatsAppButton({
       {showTooltip && (
         <div className="hidden sm:flex items-center gap-3 bg-[#0D1A12] border border-[#C5A059]/40 text-[#F7F4EE] px-4 py-3 rounded-lg shadow-2xl max-w-xs animate-fade-in relative">
           <div className="space-y-0.5">
-            <p className="text-xs font-semibold text-[#C5A059]">
+            <p className="text-xs font-semibold text-gold">
               Care Desk Online
             </p>
             <p className="text-xs text-[#A3B0A7]">

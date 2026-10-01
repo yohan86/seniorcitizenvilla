@@ -40,7 +40,7 @@ export default function Accommodations() {
               className="bg-white border border-[#EAE5DC] p-8 flex flex-col justify-between hover:border-[#C5A059] transition-all shadow-sm"
             >
               <div className="space-y-4">
-                <span className="text-[10px] font-mono tracking-widest uppercase bg-teal-800 text-[#C5A059] px-3 py-1 inline-block">
+                <span className="text-[10px] font-mono tracking-widest uppercase bg-green text-white px-3 py-1 inline-block">
                   {room.tag}
                 </span>
                 <h3 className="font-serif text-2xl font-medium text-[#0D1A12]">
