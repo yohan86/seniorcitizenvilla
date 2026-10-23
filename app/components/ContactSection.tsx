@@ -3,9 +3,9 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 
-const ContactSection = () => {
+const ContactForm = () => {
   const params = useSearchParams();
   const title = params.get("inquiry") || "";
   const formatedTitle = title.replace(/-/g, " ");
@@ -218,4 +218,17 @@ const ContactSection = () => {
   );
 }
 
-export default ContactSection;
+const ContactContainer = () => {
+  const params = useSearchParams();
+  const title = params.get("inquiry") || "default";
+  return (
+      <ContactForm key={title} />
+  );
+}
+export default function ContactSection(){
+  return (
+    <Suspense fallback={<div className="text-center py-20 text-sm text-stone-400">Loading Contact Form...</div>}>
+      <ContactContainer />
+    </Suspense>
+  )
+}
