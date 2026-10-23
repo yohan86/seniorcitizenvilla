@@ -28,9 +28,9 @@ const slides: Slide[] = [
   },
   {
     id: "3",
-    title: "24/7 Wellness & Care Center",
-    description: "On-site medical assistance and continuous monitoring for peace of mind.",
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200",
+    title: "Peaceful Sanctuary Garden",
+    description: "A refreshing natural environment built to promote mental well-being and gentle outdoor activity",
+    image: `${prefix}/images/citizen-villa-enterance.webp`,
   },
 ];
 

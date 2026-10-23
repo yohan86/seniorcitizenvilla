@@ -1,10 +1,17 @@
 "use client";
 
+
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 
 const ContactSection = () => {
+  const params = useSearchParams();
+  const title = params.get("inquiry") || "";
+  const formatedTitle = title.replace(/-/g, " ");
+
   const [formData, setFormData] = useState({
+    title: formatedTitle,
     name: "",
     phone: "",
     email: "",
@@ -49,7 +56,18 @@ const ContactSection = () => {
             </h3>
             
             <form onSubmit={handleSubmit} className="forms space-y-5 text-sm">
+              <div className="space-y-2 w-full">
+                  <label>Title</label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="Subject of your inquiry"
+                    value={formData.title}
+                    onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+                  />
+                </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                
                 <div className="space-y-2">
                   <label>Your Full Name *</label>
                   <input

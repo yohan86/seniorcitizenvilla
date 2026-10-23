@@ -23,20 +23,19 @@ export default function Home() {
         {/* Subtle Background Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#C5A059]/5 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 max-w-3xl space-y-4 md:space-y-8 mb-10 md:mb-0">
+        <div className="flex  flex-col relative z-10 max-w-3xl space-y-4 md:space-y-8 mb-10 md:mb-0">
           <div className="inline-flex items-center gap-3 border-l-2 border-[#C5A059] pl-4">
             <span className="text-site-yellow text-xs font-mono tracking-[0.25em] uppercase">
               Exclusive Senior Living
             </span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl text-[#cbffd3]! font-light leading-[1.15] tracking-wide">
-            Where Dignity, Comfort, and Happiness Reside.
+          <h1 className="flex flex-col text-2xl sm:text-3xl text-[#cbffd3]! font-light leading-[1.15] tracking-wide">
+            <span className="flex text-5xl pb-3">Bridging the Care Gap:</span> <br />Empowering Sri Lanka&apos;s Rapidly Aging Population
           </h1>
 
           <p className="text-[#eaeaea] text-lg sm:text-xl font-light leading-relaxed max-w-2xl">
-            At Senior Citizen Villa, Horana, we provide a peaceful, secure sanctuary where older adults live with continuous professional care, total respect, and complete peace of mind.
-          </p>
+An institutional advocacy initiative by Pahan Piyasa to deliver resource networks, structural guidance, and dignified care systems to families nationwide.          </p>
 
           <div className="pt-4 flex flex-wrap items-center gap-6">
             <Link
@@ -54,7 +53,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="flex items-center w-full h-100 md:h-full overflow-hidden">
+        <div className="flex items-center w-full md:max-w-[500px] h-100 md:h-full overflow-hidden">
         {/* Parent container needs 'relative' and fixed/responsive sizing */}
           <div className="relative w-full h-80 md:h-[480px] rounded-full border-5 border-[#fff] overflow-hidden md:py-8 shadow-lg">
             <Image

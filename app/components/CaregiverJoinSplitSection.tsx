@@ -62,7 +62,7 @@ export default function CaregiverJoinSplitSection({ clickfn }: CaregiverJoinSpli
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#c5a059]/10 text-stone-100 font-bold text-xl mb-6 border border-[#c5a059]/30">
                 01
               </div>
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-stone-100 mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-stone-100 mb-4">
                 Need a Caregiver?
               </h3>
               <p className="text-stone-200 text-sm sm:text-base leading-relaxed mb-8">
@@ -74,7 +74,7 @@ export default function CaregiverJoinSplitSection({ clickfn }: CaregiverJoinSpli
               <Link
                 href="/find-caregiver"
                 onClick={() => clickfn?.(false)}
-                className="inline-flex w-full items-center justify-center px-6 py-4 rounded-lg bg-[#c5a059] text-emerald-950 font-bold text-base hover:bg-amber-300 transition-colors duration-300 shadow-md"
+                className="inline-flex w-full items-center justify-center px-6 py-4 rounded-lg bg-dark-gold text-emerald-950 font-bold text-base hover:bg-amber-300 transition-colors duration-300 shadow-md"
               >
                 Find a Caregiver →
               </Link>
@@ -87,7 +87,7 @@ export default function CaregiverJoinSplitSection({ clickfn }: CaregiverJoinSpli
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-800/40 text-stone-200 font-bold text-xl mb-6 border border-emerald-700">
                 02
               </div>
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-stone-100 mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold text-stone-100 mb-4">
                 Are You a Caregiver?
               </h3>
               <p className="text-stone-300 text-sm sm:text-base leading-relaxed mb-8">

@@ -4,18 +4,63 @@ import React, { useState } from "react";
 import GalleryModal, { EventAlbum } from "../components/GalleryModal";
 import Image from "next/image";
 import Link from "next/link";
+import { prefix } from "@/utils/prefix";
 
 const ALBUMS_DATA: EventAlbum[] = [
   {
-    id: "avurudu-2026",
-    title: "Aluth Avurudu Celebration 2026",
-    category: "avurudu",
-    date: "April 2026",
-    coverImage: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80",
-    description: "Traditional games, oil lamp lighting, rabana playing, and Kiribath table.",
+    id: "interior",
+    title: "Ambient Care Spaces",
+    category: "interior",
+    date: "October 2026",
+    coverImage: `${prefix}/images/gallery/interior/lobby007.jpeg`,
+    description: "Thoughtfully Designed Living Spaces for Peace & Comfort",
     photos: [
-      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80",
+      `${prefix}/images/gallery/interior/interior-1.jpeg`,
+      `${prefix}/images/gallery/interior/interior-2.jpeg`,
+      `${prefix}/images/gallery/interior/interior-3.jpeg`,
+      `${prefix}/images/gallery/interior/lobby.jpeg`,
+      `${prefix}/images/gallery/interior/lobby-2.jpeg`,
+      `${prefix}/images/gallery/interior/lobby003.jpeg`,
+      `${prefix}/images/gallery/interior/lobby004.jpeg`,
+      `${prefix}/images/gallery/interior/lobby006.jpeg`,
+      `${prefix}/images/gallery/interior/lobby007.jpeg`,
+      `${prefix}/images/gallery/interior/lobby008.jpeg`,
+    ],
+  },
+  {
+    id: "exterior",
+    title: "Outdoor Social Spaces",
+    category: "exterior",
+    date: "October 2026",
+    coverImage: `${prefix}/images/gallery/exterior/seniorcitizenvilla.jpeg`,
+    description: "Nature-Integrated Facilities Designed for Mindful Recovery",
+    photos: [
+      `${prefix}/images/gallery/exterior/seniorcitizenvilla.jpeg`,
+      `${prefix}/images/gallery/exterior/garden.jpeg`,
+      `${prefix}/images/gallery/exterior/garden001.jpeg`,
+      `${prefix}/images/gallery/exterior/garden002.jpeg`,
+      `${prefix}/images/gallery/exterior/garden003.jpeg`,
+      `${prefix}/images/gallery/exterior/outside.jpeg`,
+    ],
+  },
+  {
+    id: "rooms",
+    title: "Indoor Living Spaces",
+    category: "rooms",
+    date: "October 2026",
+    coverImage: `${prefix}/images/gallery/rooms/room007.jpeg`,
+    description: "Nature-Integrated Facilities Designed for Mindful Recovery",
+    photos: [
+      `${prefix}/images/gallery/rooms/room007.jpeg`,
+      `${prefix}/images/gallery/rooms/room-1.jpeg`,
+      `${prefix}/images/gallery/rooms/room-2.jpeg`,
+      `${prefix}/images/gallery/rooms/room-3.jpeg`,
+      `${prefix}/images/gallery/rooms/room004.jpeg`,
+      `${prefix}/images/gallery/rooms/room005.jpeg`,
+      `${prefix}/images/gallery/rooms/room006.jpeg`,
+      `${prefix}/images/gallery/rooms/room007.jpeg`,
+      `${prefix}/images/gallery/rooms/room008.jpeg`,
+      `${prefix}/images/gallery/rooms/veranda.jpeg`,
     ],
   },
   {
@@ -23,11 +68,11 @@ const ALBUMS_DATA: EventAlbum[] = [
     title: "Annual Maha Sangha Alms Giving",
     category: "alms",
     date: "January 2026",
-    coverImage: "https://images.unsplash.com/photo-1609234656388-0ff363383899?auto=format&fit=crop&w=800&q=80",
+    coverImage: `${prefix}/images/gallery/armsgiven1.jpeg`,
     description: "Offering sacred alms (Dana) to Venerable Monks and receiving blessings.",
     photos: [
-      "https://images.unsplash.com/photo-1609234656388-0ff363383899?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
+      `${prefix}/images/gallery/armsgiven1.jpeg`,
+      `${prefix}/images/gallery/armsgiven2.jpeg`,
     ],
   },
 ];

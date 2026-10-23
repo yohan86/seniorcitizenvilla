@@ -13,7 +13,7 @@ const rooms = [
     tag: "Companionship",
   },
   {
-    title: "Full Assistance Care Room",
+    title: "Full Assistance Care Suite",
     desc: "Specially adapted room for seniors requiring specialized medical and physical support.",
     features: ["Adjustable Medical Bed", "Dedicated Caregiver Support", "Vital Signs Station", "Non-slip Flooring"],
     tag: "High Care",
@@ -29,7 +29,7 @@ export default function Accommodations() {
             Living Spaces
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-normal text-[#3b485a]">
-            Residences Built for Comfort & Safety
+            Residences Built for<br/> Comfort & Safety
           </h2>
         </div>
 
@@ -61,8 +61,8 @@ export default function Accommodations() {
 
               <div className="pt-8 mt-6 border-t border-[#F0EBE1]">
                 <a
-                  href="#contact"
-                  className="block text-center border border-[#0D1A12] hover:bg-teal-800 hover:text-white text-[#0D1A12] py-2.5 text-xs font-semibold uppercase tracking-[0.2em] transition-all duration-300 shadow-sm hover:shadow-md"
+                  href={"/contact?inquiry=Inquiry-About-" + encodeURIComponent(room.title)}
+                  className="block text-center border border-[#0D1A12] hover:bg-green hover:text-white text-[#0D1A12] py-2.5 text-xs font-semibold uppercase tracking-[0.2em] transition-all duration-300 shadow-sm hover:shadow-md"
                 >
                   Inquire Availability
                 </a>

@@ -41,7 +41,7 @@ const features: Feature[] = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-16 px-14 bg-white border-y border-slate-100 shadow-sm">
+    <section className="py-16 px-5 md:px-14 bg-white border-y border-slate-100 shadow-sm">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
@@ -63,12 +63,14 @@ export default function WhyChooseUs() {
               key={index}
               className="p-6 bg-slate-50 hover:bg-teal-50/50 rounded-2xl border border-slate-200/80 transition-all duration-200 hover:shadow-md flex flex-col items-start"
             >
-              <div className="w-14 h-14 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center text-2xl mb-5">
+              <div className="flex items-center mb-4 gap-4">
+              <div className="w-10 h-10 md:w-14 md:h-14 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center text-2xl">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">
+              <h3 className="text-md md:text-xl font-bold text-slate-900">
                 {feature.title}
               </h3>
+              </div>
               <p className="text-slate-600 text-base leading-relaxed">
                 {feature.description}
               </p>

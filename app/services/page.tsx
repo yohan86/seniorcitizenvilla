@@ -13,6 +13,19 @@ type ServiceCategory = {
 
 const serviceCategories: ServiceCategory[] = [
   {
+    id: 'caregiver-placement',
+    title: 'Dedicated Caregiver Placement',
+    description: 'Professional, background-checked caregivers deployed directly to your home, hospital, or preferred location.',
+    items: [
+      'Direct home & location deployment',
+      'Flexible shift scheduling (Day/Night/Live-in)',
+      'Personalized match based on patient needs',
+      'Vetted & background-checked staff',
+      'Ongoing supervision & care coordination',
+      'Emergency replacement guarantee',
+    ],
+  },
+  {
     id: 'elderly-care',
     title: 'Elderly Care',
     description: 'Comprehensive daily assistance tailored for seniors seeking comfort and dignity in their golden years.',
@@ -146,7 +159,7 @@ export default function ServicesPage({ clickfn }: { clickfn?: (val: boolean) => 
               {/* Action Link */}
               <div className="pt-4 border-t border-emerald-800/40 mt-auto">
                 <Link
-                  href="/contact"
+                  href={"/contact?inquiry=Inquiry-About-" + encodeURIComponent(service.title)}
                   onClick={() => clickfn?.(false)}
                   className="inline-flex items-center text-sm font-semibold text-gold hover:text-amber-300 transition-colors"
                 >
